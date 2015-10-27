@@ -1,0 +1,27 @@
+{
+  "name": "angular-simditor",
+  "version": "1.0.7",
+  "homepage": "https://github.com/forsigner/angular-simditor",
+  "authors": [
+    "forsigner"
+  ],
+  "description": "angular wrapper for simditor",
+  "moduleType": [
+    "globals"
+  ],
+  "main": "dist/js/angular-simditor.js",
+  "keywords": [
+    "angular",
+    "simditor"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
