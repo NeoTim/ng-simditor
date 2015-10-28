@@ -2,9 +2,9 @@ module.exports = angular
   .module('simditor.directive', [])
   .directive('simditor', simditor);
 
-simditor.$inject = ['simditorConfig'];
+simditor.$inject = ['simditorOptions'];
 
-function simditor(simditorConfig) {
+function simditor(simditorOptions) {
   return {
     restrict: 'AE',
     require: 'ngModel',
@@ -16,7 +16,7 @@ function simditor(simditorConfig) {
 
       var config = angular.extend({
         textarea: $textarea
-      }, simditorConfig);
+      }, simditorOptions);
 
       var editor = new Simditor(config);
 
