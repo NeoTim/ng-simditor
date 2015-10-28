@@ -14,7 +14,7 @@ gulp.task('js', function() {
     .transform(babelify)
     .bundle()
     .pipe(source('main.js'))
-    .pipe(rename('angular-simditor.js'))
+    .pipe(rename('ng-simditor.js'))
     .pipe(gulp.dest('./dist/js'));
 });
 

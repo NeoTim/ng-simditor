@@ -37,17 +37,15 @@ function simditor($sce) {
         ]
       });
 
-
       ngModel.$render = function() {
         editor.setValue(ngModel.$viewValue || '');
       };
 
-      element.on('keyup', function() {
+      editor.on('valuechanged', function(e) {
         scope.$evalAsync(read);
         read();
       });
 
-      // Write data to the model
       function read() {
         ngModel.$setViewValue(editor.getValue());
       }

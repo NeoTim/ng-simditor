@@ -1,7 +1,7 @@
 {
-  "name": "angular-simditor",
-  "version": "1.0.7",
-  "homepage": "https://github.com/forsigner/angular-simditor",
+  "name": "ng-simditor",
+  "version": "1.0.0",
+  "homepage": "https://github.com/forsigner/ng-simditor",
   "authors": [
     "forsigner"
   ],
@@ -9,7 +9,7 @@
   "moduleType": [
     "globals"
   ],
-  "main": "dist/js/angular-simditor.js",
+  "main": "dist/js/ng-simditor.js",
   "keywords": [
     "angular",
     "simditor"

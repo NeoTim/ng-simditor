@@ -1,14 +1,14 @@
 {
-  "name": "angular-simditor",
+  "name": "ng-simditor",
   "version": "1.0.0",
   "description": "angular wrapper for simditor",
-  "main": "dist/angular-simditor.js",
+  "main": "dist/ng-simditor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/forsigner/angular-simditor.git"
+    "url": "git+https://github.com/forsigner/ng-simditor.git"
   },
   "keywords": [
     "angular",
@@ -17,9 +17,9 @@
   "author": "forsigner",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/forsigner/angular-simditor/issues"
+    "url": "https://github.com/forsigner/ng-simditor/issues"
   },
-  "homepage": "https://github.com/forsigner/angular-simditor#readme",
+  "homepage": "https://github.com/forsigner/ng-simditor#readme",
   "devDependencies": {
     "browserify": "^11.2.0",
     "gulp-less": "^3.0.3",

@@ -1,19 +1,25 @@
-# angular-simditor
+# ng-simditor
 Angular directive for simditor.
 
-[Demo](http://angular-simditor.mipinr.com  )
+[Demo](http://ng-simditor.mipinr.com  )
 
 ### Install
 
 ```
-bower install angular-simditor --save
+bower install simditor --save
+bower install ng-simditor --save
 ```
 
 
 ### Usage
 
 ``` html
-<script src="bower_components/angular-simditor/dist/js/angular-simditor.js"></script>
+<link rel="stylesheet" href="bower_components/simditor/styles/simditor.css" />
+
+<script src="bower_components/simple-module/lib/module.js"></script>
+<script src="bower_components/simple-hotkeys/lib/hotkeys.js"></script>
+<script src="bower_components/simditor/lib/simditor.js"></script>
+<script src="bower_components/ng-simditor/dist/js/ng-simditor.js"></script>
 
 ```
 
