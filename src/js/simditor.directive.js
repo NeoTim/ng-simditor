@@ -2,9 +2,9 @@ module.exports = angular
   .module('simditor.directive', [])
   .directive('simditor', simditor);
 
-simditor.$inject = ['$sce'];
+simditor.$inject = ['simditorConfig'];
 
-function simditor($sce) {
+function simditor(simditorConfig) {
   return {
     restrict: 'AE',
     require: 'ngModel',
@@ -14,41 +14,19 @@ function simditor($sce) {
       var $textarea = angular.element('<textarea placeholder="' + attr.placeholder + '"></textarea>');
       element.append($textarea);
 
-      var editor = new Simditor({
-        textarea: $textarea,
-        toolbar: [
-          'title',
-          'bold',
-          'italic',
-          'underline',
-          'strikethrough',
-          'color',
-          'ol',
-          'ul',
-          'blockquote',
-          'code',
-          'table',
-          'link',
-          'image',
-          'hr',
-          'indent',
-          'outdent',
-          'alignment',
-        ]
-      });
+      var config = angular.extend({
+        textarea: $textarea
+      }, simditorConfig);
+
+      var editor = new Simditor(config);
 
       ngModel.$render = function() {
         editor.setValue(ngModel.$viewValue || '');
       };
 
       editor.on('valuechanged', function(e) {
-        scope.$evalAsync(read);
-        read();
-      });
-
-      function read() {
         ngModel.$setViewValue(editor.getValue());
-      }
+      });
 
     }
   };

@@ -1,6 +1,5 @@
-let simditorDirective = require('./simditor.directive');
-
 module.exports = angular
   .module('ngSimditor', [
-    simditorDirective.name,
+    require('./simditor.directive').name,
+    require('./simditorConfig.service').name
   ]);
