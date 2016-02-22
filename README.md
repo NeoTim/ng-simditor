@@ -1,8 +1,6 @@
 # ng-simditor
 Angular directive for simditor.
 
-[Demo](http://ng-simditor.mipinr.com)
-
 ## Install
 
 ```
