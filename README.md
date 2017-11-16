@@ -24,7 +24,7 @@ angular
 .module('app', ['ngSimditor'])
 .config(function($provide) {
 
-  // simditor options customize
+  // simditor global options customize
   $provide.decorator('simditorOptions', ['$delegate', function(simditorOptions) {
     simditorOptions.toolbar = [
       'title',
@@ -55,8 +55,12 @@ angular
 
 ```html
 <simditor ng-model="content" placeholder="hahahahah"></simditor>
+
+<!-- OR -->
+
+<simditor ng-model="content" options="{placeholder:'hahahahah',...}"></simditor>
 ```
 
-## Opttions
+## Options
 
-check more [Options](http://simditor.tower.im/docs/doc-config.html#anchor-toolbarFloat) for ng-simditor.
+Check more [Options](http://simditor.tower.im/docs/doc-config.html#anchor-toolbarFloat) for ng-simditor.
